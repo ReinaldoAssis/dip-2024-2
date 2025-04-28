@@ -77,9 +77,41 @@ import matplotlib.pyplot as plt
 from scipy import ndimage
 import cv2
 
-def load_image():
-    """Load and return the image for processing."""
-    return io.imread('../src/pdi/rgb.png')
+def load_image(task_id=None):
+    """Load and return the image for processing based on task number."""
+    if task_id == 1:
+       
+        return io.imread('images/flowers.jpg')
+    elif task_id == 2:
+       
+        return io.imread('images/rgb.png')
+    elif task_id == 3:
+       
+        return io.imread('images/flowers.jpg')
+    elif task_id == 4:
+       
+        return io.imread('images/lena.png')
+    elif task_id == 5:
+       
+        return io.imread('images/baboon.png')
+    elif task_id == 6:
+       
+        return io.imread('images/lena.png')
+    elif task_id == 7:
+       
+        return io.imread('images/baboon.png')
+    elif task_id == 8:
+       
+        return io.imread('images/strawberries.tif')
+    elif task_id == 9:
+       
+        return io.imread('images/flowers.jpg')
+    elif task_id == 10:
+       
+        return io.imread('images/monkey.jpeg')
+    else:
+       
+        return io.imread('images/rgb.png')
 
 def task1():
     """Display Color Histograms for RGB Images."""
